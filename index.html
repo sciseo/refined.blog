@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="public/css/jquery.dataTables.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
 </head>
-
 
 <body>  
   <div class="wrapper">
@@ -81,7 +78,7 @@
             {
               "data": "name",
               "render": function (data, type, full) {
-                return `<a href="${full.url}" target="_blank">${data}</a>`;
+                return `<a href="${full.url}" target="_blank" rel="nofollow">${data}</a>`;
               }
             },
             {
