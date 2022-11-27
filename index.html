@@ -33,9 +33,9 @@
           sources. Then, tags were extracted for these sites and HN scores were calculated.</p>
         <p><u>Sources</u></p>
         <ul>
-          <li><a href="https://news.ycombinator.com/item?id=24539445" target="_blank">HN Post</a></li>
-          <li><a href="https://github.com/kilimchoi/engineering-blogs" target="_blank">Engineering Blogs</a></li>
-          <li><a href="https://github.com/kaizensoze/security-blogs" target="_blank">Security Blogs</a></li>
+          <li><a href="https://news.ycombinator.com/item?id=24539445" rel="nofollow" target="_blank">HN Post</a></li>
+          <li><a href="https://github.com/kilimchoi/engineering-blogs" rel="nofollow" target="_blank">Engineering Blogs</a></li>
+          <li><a href="https://github.com/kaizensoze/security-blogs" rel="nofollow" target="_blank">Security Blogs</a></li>
         </ul>
       </details>
       <hr>
@@ -95,7 +95,7 @@
               "render": function (data, type, full) {
                 if (full.hnp) {
                   url = full.url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0]
-                  return `<a class="link" href="https://news.ycombinator.com/from?site=${url}" target="_blank">${full.hnp}</a>`;
+                  return `<a class="link" href="https://news.ycombinator.com/from?site=${url}" rel="nofollow" target="_blank">${full.hnp}</a>`;
                 } else {
                   return '-';
                 }
@@ -105,7 +105,7 @@
               "data": null,
               "render": function (data, type, full) {
                 if (full.furl) {
-                  return `<a href="${full.furl}" target="_blank">link</a>`;
+                  return `<a href="${full.furl}" target="_blank" rel="nofollow">link</a>`;
                 } else {
                   return '-';
                 }
