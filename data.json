@@ -4589,7 +4589,18 @@
             "security"
         ],
         "furl": ""
-      }
+      },
+      {
+        "name": "Vojtech Ruzicka's Programming Blog",
+        "url": "https://www.vojtechruzicka.com/",
+        "tags": [
+            "programming",
+            "java",
+            "javascript",
+            "software"
+        ],
+        "furl": "https://www.vojtechruzicka.com/feed/"
+        }
     ]
 }
 
